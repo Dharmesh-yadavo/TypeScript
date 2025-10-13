@@ -21,7 +21,7 @@ const student1: Student = {
     `Welcome my name is ${student1.name}, I am ${student1.age}yrs old & I am from ${country}`,
 };
 
-// const functionn: () => void = (): void => {}
+// const function: () => void = (): void => {}
 
 const introduction: (student1: Student) => string = (student1): string => {
   const { name, age } = student1;

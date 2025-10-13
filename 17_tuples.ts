@@ -6,7 +6,7 @@
 //? Real-life example of using tuples in TypeScript:
 // Let's consider a scenario where you want to represent a person's basic information, including their
 // name, age, and whether they have a driver's license. Using a tuple can be an appropriate choice because
-//  these three elements have a specific order and type.
+// these three elements have a specific order and type.
 
 //! Defining a tuple type for person information
 type PersonInfo = readonly [string, number, boolean];
@@ -41,6 +41,16 @@ console.log(displayPersonInfo(person2));
 
 // Create two product instances using this tuple type and display their information.
 
+type ProductInfo = readonly [string, number, number];
+const displayProductInfo: (product: ProductInfo) => string = (
+  product: ProductInfo
+): string => {
+  const [name, price, quantity] = product;
+  return `Name: ${name} - Price: ${price} - Quantity: ${quantity}`;
+};
+const product1: ProductInfo = ["ball", 30, 3];
+console.log(displayProductInfo(product1));
+
 //~ Question 2:
 // You are creating a student management system and want to keep track of student grades for different subjects.
 //  Define a tuple type called SubjectGrade to represent a subject and its corresponding grade,
@@ -49,6 +59,18 @@ console.log(displayPersonInfo(person2));
 // Grade (number)
 // Create an array of SubjectGrade tuples to store the grades for a student in three different
 // subjects: Math, English, and Science. Calculate and display the average grade for the student.
+
+//&
+// type SubjectGrade = readonly [string, number];
+// const displayAverageGrade: (student: SubjectGrade) => string = (
+//   student: SubjectGrade
+// ): string => {
+//   const [subjectName, grade] = student;
+//   return `SubjectName: ${subjectName} - Grade: ${grade}`;
+// };
+// const student1: SubjectGrade = ["Math", 89];
+// const student2: SubjectGrade = ["English", 91];
+// const student3: SubjectGrade = ["Science", 94];
 
 //~ Question 3:
 // You are working on a weather application, and you need to store weather data for different cities.
