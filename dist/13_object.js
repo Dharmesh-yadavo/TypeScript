@@ -1,8 +1,10 @@
+"use strict";
 //* In TypeScript, objects are used to represent data with key-value pairs.
 //* Each key in the object is a string (or a symbol in ES6) that maps to a value.
+Object.defineProperty(exports, "__esModule", { value: true });
 // ? Let's consider a real-life example of representing a person's information using TypeScript objects
 // ? ℹ️ -> name, age, isStudent, address{ city, country }
-var person = {
+const person = {
     name: "Dharmesh Yadav",
     age: 21,
     isStudent: true,
@@ -11,7 +13,7 @@ var person = {
         country: "India",
     },
 };
-var person1 = {
+const person1 = {
     name: "Dheeraj Yadav",
     age: 21,
     isStudent: true,
@@ -20,7 +22,7 @@ var person1 = {
         country: "India",
     },
 };
-var person2 = {
+const person2 = {
     name: "Kunal",
     age: 16,
     isStudent: true,
@@ -40,7 +42,7 @@ console.log(person.address.city);
 // Name: "Laptop"
 // Price: 1000
 // Quantity: 5
-var product = {
+const product = {
     name: "Laptop",
     price: 1000,
     quantity: 5,

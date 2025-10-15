@@ -1,6 +1,8 @@
+"use strict";
 /* Generics in TypeScript allow you to create reusable components or functions that
 can work with multiple data types.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // function logAndReturn(
 //   value: number | string | boolean
 // ): number | string | boolean {
@@ -18,17 +20,17 @@ function logAndReturn(value) {
     return value;
 }
 // using generic fxnwith different types
-var numberResult = logAndReturn(42);
-var stringResult = logAndReturn("Hello, Generics!");
-var booleanResult = logAndReturn(true);
+const numberResult = logAndReturn(42);
+const stringResult = logAndReturn("Hello, Generics!");
+const booleanResult = logAndReturn(true);
 console.log(numberResult);
 console.log(stringResult);
 console.log(booleanResult);
 function add(a, b) {
     return a + b;
 }
-var result1 = add(5, 10); // Output: 15
-var result2 = add("Hello, ", "world!"); // Output: "Hello, world!"
+const result1 = add(5, 10); // Output: 15
+const result2 = add("Hello, ", "world!"); // Output: "Hello, world!"
 console.log(result1);
 console.log(result2);
 //?? You need to code the same using he Generics Types.

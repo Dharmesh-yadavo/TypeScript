@@ -1,17 +1,17 @@
+"use strict";
 /* The function call signature refers to the declaration or definition of a function,which includes the
 function's name, parameters, and return type. It defines the structure and type information of a function
 without including the function's implementation or body. */
-var student1 = {
+Object.defineProperty(exports, "__esModule", { value: true });
+const student1 = {
     name: "Dharmesh",
     age: 21,
-    greet: function (country) {
-        return "Welcome my name is ".concat(student1.name, ", I am ").concat(student1.age, "yrs old & I am from ").concat(country);
-    },
+    greet: (country) => `Welcome my name is ${student1.name}, I am ${student1.age}yrs old & I am from ${country}`,
 };
-// const functionn: () => void = (): void => {}
-var introduction = function (student1) {
-    var name = student1.name, age = student1.age;
-    return "Welcome my name is ".concat(name, ", I am ").concat(age, " yrs old");
+// const function: () => void = (): void => {}
+const introduction = (student1) => {
+    const { name, age } = student1;
+    return `Welcome my name is ${name}, I am ${age} yrs old`;
 };
 console.log(introduction(student1));
 console.log(student1.greet("India"));

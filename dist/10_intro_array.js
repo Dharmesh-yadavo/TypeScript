@@ -1,13 +1,15 @@
+"use strict";
 //! array in TS
+Object.defineProperty(exports, "__esModule", { value: true });
 //? Using square brackets
-var number = [1, 2, 3, 4, 5];
+const number = [1, 2, 3, 4, 5];
 //? Using array constructor
-var number1 = new Array(10, 20, 30, 40, 50);
+const number1 = new Array(10, 20, 30, 40, 50);
 //? Using the Array.of method
-var name = Array.of("dharm", "yadav", "mohit");
+const names = Array.of("dharm", "yadav", "mohit");
 //* Operation: Acessing elements using index
-console.log(name[2]);
-console.log(name.length);
+console.log(names[2]);
+console.log(names.length);
 // TODO Homework Time
 // different types of array: example
 // const value1 = [1, 2, 3, 4, 5];

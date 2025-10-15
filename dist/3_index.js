@@ -9,4 +9,3 @@ function sum(a, b) {
 }
 //* func call
 console.log(sum(10, 5));
-//# sourceMappingURL=index.js.map

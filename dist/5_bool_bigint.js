@@ -1,9 +1,11 @@
+"use strict";
 //* Boolean Type:
 //? In TypeScript, the boolean type represents a value that can be either true or
 //? false. It is one of the basic primitive types in the language.
-var isMyNameVinod = true;
-var isDone = true;
-var hasStarted = false;
+Object.defineProperty(exports, "__esModule", { value: true });
+let isMyNameVinod = true;
+let isDone = true;
+let hasStarted = false;
 // hasStarted = "yes" // invalid
 // !Question: Check Even Number
 // /* Write a TypeScript function called isEven that takes a number as a
@@ -25,16 +27,16 @@ console.log(isDivisible(8));
 //? BigInt literals are written by appending the n suffix to an integer literal.
 //? In JS we can't read the whole numbers beyond 2 raise to power 53
 // let maxNumber = Number.MAX_SAFE_INTEGER;
-var bigNumber = 9007199254740991n;
+let bigNumber = 9007199254740991n;
 // console.log(bigNumber);
-var anotherBigNumber = BigInt("90071992547409915");
+let anotherBigNumber = BigInt("90071992547409915");
 // console.log(anotherBigNumber);
 //! Assignment
-var sum = bigNumber + anotherBigNumber;
+let sum = bigNumber + anotherBigNumber;
 console.log("sum = " + sum);
-var difference = bigNumber - anotherBigNumber;
+let difference = bigNumber - anotherBigNumber;
 console.log(difference);
-var product = bigNumber * anotherBigNumber;
+let product = bigNumber * anotherBigNumber;
 console.log(product);
-var division = bigNumber / anotherBigNumber;
+let division = bigNumber / anotherBigNumber;
 console.log(division);
