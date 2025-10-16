@@ -30,7 +30,11 @@ class Students extends Persons {
   grade: number;
 
   constructor(name: string, age: number, hobbies: string[], grade: number) {
+    // 💥 Key Point: 'super()' must be called first in a subclass constructor.
+    // It passes control (and arguments) to the parent class constructor to initialize
+    // the inherited properties (name, age, hobbies).
     super(name, age, hobbies);
+    // 'super' must be called before accessing 'this' in the constructor of a derived class.
     this.grade = grade;
   }
 
